@@ -37,9 +37,9 @@ import TheWelcome from "../components/TheWelcome.vue";
         <h3> Tehnologies étudiées </h3>
         <div class="logosT">
         
-        <img src="./assets/photo.png" alt=" " />
-        <img src="./assets/photo.png" alt=" " />
-        <img src="./assets/photo.png" alt=" " />
+        <img src="../assets/HtmlLogo.png" alt=" " />
+        <img src="../assets/CssLogo.png" alt=" " />
+        <img src="../assets/JS.png" alt=" " />
         
         </div>
       </div>
