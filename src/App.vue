@@ -1,19 +1,22 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
     
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Présentation</RouterLink>
-        <RouterLink to="/about">Les créations</RouterLink>
-        <RouterLink to="/projet"> Contact </RouterLink>
-
-      </nav>
+   <nav>
+        <ul>
+            <li><a href="#about1">Présentation</a></li>
+            <li><a href="#creation">Créations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="backToTop" onclick="scrollToTop()">
+        
+        <img src="../assets/UP.png" alt="">
     </div>
+    </nav>
+   
 
   </header>
 
@@ -22,33 +25,45 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
-body {
-  background:black;
-  padding:0;
-  margin:0;
-
-}
-.wrapper{
-  background:black;
-  display:flex;
-  align-items:center;
-  justify-content:space-around;
-  margin:0px;
-  color:white;
-  font-size:40px;
-  padding:10px;
-  vertical-align: top;
-  
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
 
-.icons{
-  display:flex;
-  align-items:center;
-  justify-content:space-around;
-  margin:20px;
-  padding:10px;
-  size:40px;
-  vertical-align:bottom;
-  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop img {
+    width: 50px; /* Ajustez la taille de votre logo ou photo */
+    height: auto;
+}
+
 </style>

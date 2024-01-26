@@ -1,5 +1,4 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
 </script>
 
 <template>
@@ -20,26 +19,24 @@ import TheWelcome from "../components/TheWelcome.vue";
 
     <div class='container2'> 
 
-     <div class=" about">
+     <div id="about1" class=" about">
      <h2> About Me </h2>
 
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-     elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-       Excepteur sint occaecat cupidatat non proident, sunt in culpa
-      qui officia deserunt mollit anim id est laborum.
+     <p> Salut ! Je suis Anamaria Brazdau, un développeur JavaScript junior passionné par la création d'applications web et la résolution de problèmes concrets à travers le code.
+      Mon parcours dans le monde de la programmation a débuté avec une profonde curiosité et un engagement envers l'apprentissage continu.
+      En ce moment, je perfectionne mes compétences en HTML,CSS et Vue.js, et je suis ravi de contribuer mes connaissances à des projets qui ont un impact positif.
+      Je crois en la puissance de l'apprentissage continu. 
+      Je suis toujours ouvert à la collaboration avec d'autres développeurs et à l'apprentissage auprès de professionnels expérimentés dans le domaine.
       </p>
      
       </div>
       <div class="tehnologies">
         <h3> Tehnologies étudiées </h3>
-        <div class="logosT">
+        <div id="creation" class="logosT">
         
-        <img src="../assets/HtmlLogo.png" alt=" " />
+        <img src="../assets/HTML5Logo.png" alt=" " />
         <img src="../assets/CssLogo.png" alt=" " />
-        <img src="../assets/JS.png" alt=" " />
+        <img src="../assets/JSLogo.png" alt=" " />
         
         </div>
       </div>
@@ -61,8 +58,8 @@ import TheWelcome from "../components/TheWelcome.vue";
           </a>
           </div>
 
-          <div>
-          <p></p>
+          <div class="paragraf">
+          <p> La date de dernière mise à jour du site </p>
           </div>
        </footer>
     
@@ -107,12 +104,20 @@ import TheWelcome from "../components/TheWelcome.vue";
   font-size:15px;
   padding:2px;
   flex-direction:column;
-  
+  width: 50%;
+  height: auto;
 }
+.logosT{
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  width: 50%;
+  height: auto;
 
+}
 .profile img{
-  widht:150px;
-  height:150px;
+  widht:50px;
+  height:50px;
   border-radius:100px;
   box-shadow: 3px -4px 25px 5px pink;
   border-color: pink solid;
@@ -129,11 +134,28 @@ import TheWelcome from "../components/TheWelcome.vue";
 .icons{
   display:flex;
   align-items:center;
+  background-color:black;
   justify-content:space-around;
-  margin:20px;
   padding:10px;
   size:50px;
   vertical-align:bottom;
   
 }
+.paragraf{
+  display:flex;
+  font-size:20px;
+  align-items:center;
+  color:white;
+  flex-direction:column;
+  background-color:black;
+}
+.error{
+  display:flex;
+  align-items:center;
+
+}
 </style> 
+
+
+
+
