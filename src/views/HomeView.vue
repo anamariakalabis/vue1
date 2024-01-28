@@ -31,7 +31,7 @@
      
       </div>
       <div class="tehnologies">
-        <h3> Tehnologies étudiées </h3>
+        <h2> Tehnologies étudiées </h2>
         <div id="creation" class="logosT">
         
         <img src="../assets/HTML5Logo.png" alt=" " />
@@ -89,6 +89,8 @@
   display:flex;
   flex-direction:column;
   padding:10%;
+  padding-top:0;
+  padding-bottom:0;
   background-color:black;
   font-size:10px;
 }
@@ -100,20 +102,29 @@
 }
 .tehnologies{
   display:flex;
-  width:20%;
+
   font-size:15px;
   padding:2px;
   flex-direction:column;
-  width: 50%;
+
   height: auto;
+}
+
+.tehnologies h2{
+  text-align:center;
+  margin:20px
 }
 .logosT{
   display:flex;
   align-items:center;
+  justify-content:center;
   flex-direction:row;
-  width: 50%;
   height: auto;
 
+}
+
+.logosT img {
+  width:100px
 }
 .profile img{
   widht:50px;
@@ -139,6 +150,7 @@
   padding:10px;
   size:50px;
   vertical-align:bottom;
+  font-size:50px
   
 }
 .paragraf{
@@ -149,11 +161,9 @@
   flex-direction:column;
   background-color:black;
 }
-.error{
-  display:flex;
-  align-items:center;
 
-}
+
+
 </style> 
 
 
