@@ -1,5 +1,35 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+
+
+
+  // Fonction pour ouvrir la modal et remplir les données
+  function openModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+
+    // Remplacez ces données par celles de votre projet
+    document.getElementById("modalTitle").innerHTML = "Titre du Projet";
+    document.getElementById("modalDate").innerHTML = "Date de création";
+    document.getElementById("modalTechnologies").innerHTML = "Technologies utilisées";
+    document.getElementById("modalLink").href = "lien vers le site ou le fichier PDF";
+    document.getElementById("modalGitHub").href = "lien vers le repository GitHub (le cas échéant)";
+  }
+
+  // Fonction pour fermer la modal
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+
+  // Fermer la modal en dehors de son contenu
+  window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
 </script>
 
 <template>
