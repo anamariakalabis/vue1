@@ -1,8 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 
-
-
   // Fonction pour ouvrir la modal et remplir les données
   function openModal() {
     var modal = document.getElementById("myModal");
@@ -15,13 +13,11 @@ import { RouterLink, RouterView } from "vue-router";
     document.getElementById("modalLink").href = "lien vers le site ou le fichier PDF";
     document.getElementById("modalGitHub").href = "lien vers le repository GitHub (le cas échéant)";
   }
-
   // Fonction pour fermer la modal
   function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
   }
-
   // Fermer la modal en dehors de son contenu
   window.onclick = function(event) {
     var modal = document.getElementById("myModal");
@@ -29,9 +25,7 @@ import { RouterLink, RouterView } from "vue-router";
       modal.style.display = "none";
     }
   }
-
 </script>
-
 <template>
   <header>
     <nav>

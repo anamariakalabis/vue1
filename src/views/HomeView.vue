@@ -8,17 +8,17 @@
           <img src="../assets/photo.png" alt="photoAK" />
         </a>
         <h1>Anamaria Brazdau</h1>
-        <p>Software Developper</p>
+        <p>Software Developper Junior</p>
       </div>
     </div>
   </div>
 
   <div class="container2">
     <div id="about1" class="about">
-      <h2>About Me</h2>
+      <h2> A Propos </h2>
 
       <p>
-        Salut ! Je suis Anamaria Brazdau, un développeur JavaScript junior
+        Salut ! Je suis Anamaria Brazdau, une développeuse JavaScript junior
         passionné par la création d'applications web et la résolution de
         problèmes concrets à travers le code. Mon parcours dans le monde de la
         programmation a débuté avec une profonde curiosité et un engagement
@@ -32,20 +32,13 @@
     </div>
        
     <div class="tehnologies">
-     <!--
-      <h2>Tehnologies étudiées</h2>
-      <div id="creation" class="logosT">
-        <img src="../assets/HTML5Logo.png" alt=" " />
-        <img src="../assets/CssLogo.png" alt=" " />
-        <img src="../assets/JSLogo.png" alt=" " />
-      </div>
-     -->
+  
 
     </div>
   </div>
 
   <div class="container3">
-    <!-- Ajouter photo projet -->
+   
     <div>
       <div class="wrapper">
         <a @click="setInfoInModal(1)"><p>CV en ligne</p><br>
@@ -72,7 +65,6 @@
   <form action="aaa.php" method="POST">
     <div class="main-wrapper">
       <h1 id="title">Contact</h1>
-
       <div class="items-wrapper">
         <label hidden id="name-label">""</label>
         <input
@@ -107,7 +99,6 @@
           class="feedback-input"
           placeholder="Comment"
         ></textarea>
-
         <input id="submit" type="submit" value="Envoyer" />
       </div>
     </div>
@@ -129,7 +120,7 @@
     </div>
 
     <div class="paragraf">
-      <p>La date de dernière mise à jour du site</p>
+      <p>La date de dernière mise à jour du site : 06/03/2024 </p>
     </div>
   </footer>
 </template>
@@ -148,19 +139,19 @@ function setInfoInModal(index) {
     case 1:
       titre.value = "CV en ligne";
       date.value = "10/10/2023";
-      link.value = "xxx";
+      link.value = "https://github.com/anamariakalabis/mon-cv";
       imgSrc.value = "/src/assets/HTML5Logo.png";
       break;
     case 2:
       titre.value = "Formulaire en ligne";
       date.value = "12/11/2023";
-      link.value = "xxx";
+      link.value = "https://github.com/anamariakalabis/formulaire";
       imgSrc.value = "/src/assets/CssLogo.png";
       break;
     case 3:
       titre.value = "Portfolio en ligne";
       date.value = "02/02/2024";
-      link.value = "xxx";
+      link.value = "https://github.com/anamariakalabis/vue1";
       imgSrc.value = "/src/assets/JSLogo.png";
       break;
     default:
@@ -233,7 +224,7 @@ function hideModal() {
 }
 .profile img {
   widht: 50px;
-  height: 50px;
+  height: 150px;
   border-radius: 100px;
   box-shadow: 3px -4px 25px 5px pink;
   border-color: pink solid;
@@ -340,7 +331,7 @@ textarea {
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
   width: 100%;
-  background: #2a475e;
+  background: black;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -356,17 +347,17 @@ textarea {
 
 .container3 h1 {
   text-align: center;
+  background:black;
 }
 
 /* Modal Stye */
 
 .wrapper {
   height: auto;
-  /* This part is important for centering the content */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* End center */
+ 
 }
 
 .wrapper a {
@@ -382,9 +373,13 @@ textarea {
   text-align:center;
 }
 .wrapper a:hover {
-cursor:pointer
+cursor:pointer;
+box-shadow: 2px 2px 5px pink; 
+text-decoration:underline;
 }
-
+.main-wrapper h1{
+  text-align:center;
+}
 .modal__content {
   border-radius: 4px;
   position: relative;
@@ -434,6 +429,7 @@ cursor:pointer
   height: auto;
   margin-bottom: 10px;
 }
+
 .modal {
   display: flex;
   align-items: center;
@@ -460,5 +456,8 @@ cursor:pointer
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+.submit{
+  background-color:black;
 }
 </style>
